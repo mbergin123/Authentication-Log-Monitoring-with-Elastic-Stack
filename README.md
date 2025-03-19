@@ -3,7 +3,7 @@ This project focuses on monitoring and analyzing authentication logs from Window
 
 Key Features
 
-Log Collection & Ingestion: Configured Elastic Agents to collect authentication logs from:
+✅ Log Collection & Ingestion: Configured Elastic Agents to collect authentication logs from:
 * Windows Event Viewer (RDP & local logins)
 * SSH logs (Linux authentication attempts)
 
@@ -19,7 +19,8 @@ Log Collection & Ingestion: Configured Elastic Agents to collect authentication 
 * Unauthorized SSH access attempts
 
 ✅ Cloud Deployment: Managed authentication log collection on Vultr cloud-hosted servers.
-* Technologies Used
+
+Technologies Used
 * Vultr (Cloud Hosting)
 * Elastic Stack (Elasticsearch, Kibana, Elastic Agents)
 * Windows Event Viewer & SSH Logs
