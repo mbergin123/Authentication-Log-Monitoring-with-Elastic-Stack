@@ -1,17 +1,28 @@
-Authentication Log Monitoring with Elastic Stack
 Overview
-This project focuses on monitoring authentication logs from both Windows and SSH servers deployed on Vultr. Using Elastic Agents and Kibana, I set up real-time log analysis and alerting to detect authentication events, such as successful and failed login attempts, brute-force attempts, and unauthorized access.
+This project focuses on monitoring and analyzing authentication logs from Windows and SSH servers deployed on Vultr. Using Elastic Agents and Kibana, I built interactive dashboards to visualize login activity, track authentication patterns, and detect potential security threats. Custom alerting rules were configured to notify about suspicious login attempts, brute-force attacks, and unauthorized access.
 
 Key Features
-* Log Collection & Ingestion: Configured Elastic Agents to collect authentication logs from Windows Event Viewer and SSH logs.
-* Centralized Monitoring: Utilized Elasticsearch and Kibana to store, visualize, and analyze authentication events.
-* Real-time Alerts: Created custom alerts in Kibana to notify about suspicious login activities and potential security threats.
-* Cloud Deployment: Deployed and managed Windows & Linux-based SSH servers on Vultr for log collection and security analysis.
 
-Technologies Used
+Log Collection & Ingestion: Configured Elastic Agents to collect authentication logs from:
+* Windows Event Viewer (RDP & local logins)
+* SSH logs (Linux authentication attempts)
+
+✅ Custom Dashboards in Kibana: Built dashboards displaying:
+* User IP Address
+* Geolocation (Country of Login)
+* Username of the Logged-in User
+* Count of Authentication Events
+
+✅ Real-time Alerting: Set up custom alerts in Kibana for:
+* Multiple failed login attempts (potential brute-force attacks)
+* Login attempts from unusual geolocations
+* Unauthorized SSH access attempts
+
+✅ Cloud Deployment: Managed authentication log collection on Vultr cloud-hosted servers.
+* Technologies Used
 * Vultr (Cloud Hosting)
-* Windows Event Viewer & Linux SSH Logs
 * Elastic Stack (Elasticsearch, Kibana, Elastic Agents)
+* Windows Event Viewer & SSH Logs
 
 Example below.
 
