@@ -1,24 +1,16 @@
-Objective
+Authentication Log Monitoring with Elastic Stack
+Overview
+This project focuses on monitoring authentication logs from both Windows and SSH servers deployed on Vultr. Using Elastic Agents and Kibana, I set up real-time log analysis and alerting to detect authentication events, such as successful and failed login attempts, brute-force attempts, and unauthorized access.
 
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
-
-Skills Learned
-
-Advanced understanding of SIEM concepts and practical application.
-Proficiency in analyzing and interpreting network logs.
-Ability to generate and recognize attack signatures and patterns.
-Enhanced knowledge of network protocols and security vulnerabilities.
-Development of critical thinking and problem-solving skills in cybersecurity.
-Tools Used
-[Bullet Points - Remove this afterwards]
-
-Security Information and Event Management (SIEM) system for log ingestion and analysis.
-Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-Telemetry generation tools to create realistic network traffic and attack scenarios.
-Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
-
-Every screenshot should have some text explaining what the screenshot is about.
+Key Features
+Log Collection & Ingestion: Configured Elastic Agents to collect authentication logs from Windows Event Viewer and SSH logs.
+Centralized Monitoring: Utilized Elasticsearch and Kibana to store, visualize, and analyze authentication events.
+Real-time Alerts: Created custom alerts in Kibana to notify about suspicious login activities and potential security threats.
+Cloud Deployment: Deployed and managed Windows & Linux-based SSH servers on Vultr for log collection and security analysis.
+Technologies Used
+Vultr (Cloud Hosting)
+Windows Event Viewer & Linux SSH Logs
+Elastic Stack (Elasticsearch, Kibana, Elastic Agents)
 
 Example below.
 
